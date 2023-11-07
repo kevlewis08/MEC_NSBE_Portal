@@ -16,7 +16,7 @@ Create an HTML file (e.g., index.html) in your project directory.
 e.Add Content:
 Within the <body> tags, add the content for your NSBE web page. This may include headings, paragraphs, images, links, and other HTML elements.
 
-3. add links to "Chapter Meetings," "Events," and "Membership" in   the web serve
+2.. add links to "Chapter Meetings," "Events," and "Membership" in   the web serve
 
 a.Open your HTML file (e.g., index.html) in your code editor.
 
