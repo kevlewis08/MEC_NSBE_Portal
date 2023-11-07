@@ -18,17 +18,15 @@ Within the <body> tags, add the content for your NSBE web page. This may include
 
 3. add links to "Chapter Meetings," "Events," and "Membership" in   the web serve
 
- Open your HTML file (e.g., index.html) in your code editor.
+a.Open your HTML file (e.g., index.html) in your code editor.
 
-Inside the <body> section of your HTML file, add the following code to create links for "Chapter Meetings," "Events," and "Membership":
-Save your HTML file with the links.
+b.Inside the <body> section of your HTML file, add the following code to create links for "Chapter Meetings," "Events," and "Membership":
+c.Save your HTML file with the links.
 
-Create separate HTML files for "Chapter Meetings," "Events," and "Membership" content. You can name them accordingly, e.g., meetings.html, events.html, and membership.html.
+d.Create separate HTML files for "Chapter Meetings," "Events," and "Membership" content. You can name them accordingly, e.g., meetings.html, events.html, and membership.html.
 
-In each of these HTML files, add content related to the respective sections. For example, in "meetings.html," you can include information about chapter meetings, and in "events.html," include details about upcoming events. Similarly, in "membership.html," provide information about NSBE membership and how to join.
+e.In each of these HTML files, add content related to the respective sections. For example, in "meetings.html," you can include information about chapter meetings, and in "events.html," include details about upcoming events. Similarly, in "membership.html," provide information about NSBE membership and how to join.If you want to create a consistent navigation menu, you can include the same navigation links in the header or footer of each HTML file for easy access.
 
-If you want to create a consistent navigation menu, you can include the same navigation links in the header or footer of each HTML file for easy access.
+f.Save all the HTML files.
 
-Save all the HTML files.
-
-Open your web server and access the root URL, e.g., http://localhost:3000, or the URL of your web page.
+g.Open your web server and access the root URL , or the URL of your web page.
