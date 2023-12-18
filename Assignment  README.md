@@ -28,3 +28,19 @@ e.In each of these HTML files, add content related to the respective sections. F
 f.Save all the HTML files.
 
 g.Open your web server and access the root URL or the URL of your web page.
+
+Khalfani Millette
+List of Requirements
+   1) Create a webpage for NSBE.
+   2) Allow for students to create and customize information on their profile.
+   3) Create a board where companies and colleges can put sign-ups for internships/scholarships/job opportunities.
+       a) Make it so that students can apply for internships on the fly.
+       b) Companies and schools can easily scout for students via looking at thier profiles and etc.
+       c) Students can tag companies of thier choice to see if they are interested.
+   4) A list of tips and recommendations for upcoming students.
+   5) Add a calender for when meetings and events should occur
+       a) Allow for students to tag certain topics as interesting and get notifications when said events occur.
+       b) Let students schedlue plans on the calender.
+       c) Students can tag other students and invite them to events.
+       d) Also allow students to blacklist events they dont find interesting.
+
