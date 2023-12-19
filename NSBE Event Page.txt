@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NSBE Events Page</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.10.2/fullcalendar.min.css" />
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.10.2/fullcalendar.min.js"></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+        }
+
+        section {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
+        #calendar {
+            max-width: 500px;
+            margin: 20px auto;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>Welcome to the NSBE Events Page!</h1>
+        <p>Here you can see any ongoing CUNY events/meetings occuring in the area!</p>
+    </header>
+
+    <section>
+        <h2>Cuny Calender</h2>
+        <p>Events will be displayed on the calender below on the dates that they will occur on</p>
+    </section>
+
+    <div id="calendar"></div>
+
+    <footer>
+    </footer>
+
+    <script>
+        // Initization of FullCalendar library
+        $(document).ready(function () {
+            $('#calendar').fullCalendar({
+                header: {
+                    left: 'prev,next today',
+                    center: 'title',
+                    right: 'month,basicWeek,basicDay'
+                },
+                events: [
+                    {
+                        title: 'Winter Classes begin',
+                        start: '2024-01-05'
+                    },
+                    {
+                        title: 'Coding Bootcamp',
+                        start: '2024-01-03'
+                    }
+                    
+                ]
+            });
+        });
+    </script>
+    <section>
+      <!--Link to other NSBE Site Pages-->
+    <button onclick="location.href='Home_Page_NSBE.html'">Return to Home</button>
+    </section>
+  
+</body>
+
+</html>
