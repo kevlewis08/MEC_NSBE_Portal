@@ -1,0 +1,62 @@
+// Michael Ellis
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Registration</title>
+</head>
+<body>
+
+    <h2>User Registration</h2>
+
+    <?php
+    // Handle form submission
+    if ($_SERVER["REQUEST_METHOD"] == "POST") {
+        // Validate and process the registration data
+        $username = htmlspecialchars($_POST["username"]);
+        $email = htmlspecialchars($_POST["email"]);
+        $password = password_hash($_POST["password"], PASSWORD_DEFAULT);
+
+        // Connect to the database (replace these values with your database credentials)
+        $mysqli = new mysqli("localhost", "username", "password", "user_registration");
+
+        // Check connection
+        if ($mysqli->connect_error) {
+            die("Connection failed: " . $mysqli->connect_error);
+        }
+
+        // Insert user data into the database
+        $sql = "INSERT INTO users (username, email, password) VALUES (?, ?, ?)";
+        $stmt = $mysqli->prepare($sql);
+        $stmt->bind_param("sss", $username, $email, $password);
+
+        if ($stmt->execute()) {
+            echo "<p>Registration successful! You can now <a href='login.php'>login</a>.</p>";
+        } else {
+            echo "<p>Error: " . $stmt->error . "</p>";
+        }
+
+        // Close connections
+        $stmt->close();
+        $mysqli->close();
+    }
+    ?>
+
+    <!-- Registration form -->
+    <form method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>">
+        <label for="username">Username:</label>
+        <input type="text" name="username" required><br>
+
+        <label for="email">Email:</label>
+        <input type="email" name="email" required><br>
+
+        <label for="password">Password:</label>
+        <input type="password" name="password" required><br>
+
+        <input type="submit" value="Register">
+    </form>
+
+</body>
+</html>

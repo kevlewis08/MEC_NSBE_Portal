@@ -1,0 +1,46 @@
+// Michael Ellis
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Delete Account</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        form {
+            max-width: 400px;
+            margin: 20px auto;
+        }
+        label {
+            display: block;
+            margin-bottom: 8px;
+        }
+        input {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 12px;
+            box-sizing: border-box;
+        }
+        input[type="submit"] {
+            background-color: #ff6347;
+            color: white;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>Delete Account</h2>
+
+    <form method="post" action="delete_account.php">
+        <label for="confirmation">Type 'DELETE' to confirm:</label>
+        <input type="text" id="confirmation" name="confirmation" required>
+
+        <input type="submit" value="Delete Account">
+    </form>
+
+</body>
+</html>
